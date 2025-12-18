@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Perkenalan Singkat</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Saya adalah mahasiswi semester 3 jurusan informatika di Universitas Pradita yang
+    senang memperkaya pengalaman kehidupan dan belajar hal baru.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Pradita University"
+      subtitle="2024 - Present"
+    />
+    <TimeLineElement
+      title="SMA Tarsisius 1"
+      subtitle="2021 - 2024"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Mandarin Teacher"
+      subtitle="2024 - Present"
+    >
+      Mengajar bahasa mandarin dasar untuk anak TK, SD, dan SMP.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Event Enthusiast"
+      subtitle="2023- Present"
+    >
+      Menjadi SPG, Usher, dan Interpreter pada berbagai event.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Freelance Musician"
+      subtitle="2020"
+    >
+      Menjadi pemusik pada acara pernikahan.
+    </TimeLineElement>
+  </div>
+
+
+</BaseLayout>
